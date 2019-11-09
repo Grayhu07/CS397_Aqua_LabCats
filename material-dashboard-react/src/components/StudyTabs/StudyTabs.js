@@ -49,9 +49,9 @@ const RecipeReviewCard = ({study, db, sid, uid}) => {
   const [expanded, setExpanded] = React.useState(false);
   const [showPopup, setPopup] = React.useState(false);
 
-  //const handleExpandClick = () => {
-  //  setExpanded(!expanded);
-  //};
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
   const togglePopup = () => {
     setPopup(!showPopup);
   }
