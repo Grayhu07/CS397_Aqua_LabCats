@@ -7,6 +7,7 @@
   "dependencies": {
     "@material-ui/core": "4.3.2",
     "@material-ui/icons": "4.2.1",
+    "@testing-library/react": "^9.3.2",
     "chartist": "0.10.1",
     "classnames": "2.2.6",
     "firebase": "^7.2.0",
@@ -24,6 +25,7 @@
     "react-swipeable-views": "0.13.3"
   },
   "scripts": {
+  	"cypress:open": "cypress open",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --watchAll=false",
@@ -52,6 +54,7 @@
     "typescript": "3.5.3"
   },
   "devDependencies": {
+    "cypress": "^3.6.1",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-prettier": "3.1.0",
     "gulp": "4.0.2",
