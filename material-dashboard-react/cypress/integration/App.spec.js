@@ -1,1 +1,6 @@
-describe ('Test App', () => {  it ('launches', () => {    cy.visit ('/');  });});
+describe ('Test App', () => {
+
+  it ('launches', () => {
+    cy.visit ('/');
+  });
+});
