@@ -101,11 +101,12 @@ export default function Dashboard() {
     study["studies"][x.sid]["end"]
   ]);
   return (
-    <div data-testid="studiesTable" data-cy="studiesTableCy">
+    <div data-testid="studiesTable">
       <GridContainer>
         <GridItem xs={12}>
           <CustomTabs
             title="Your Research Studies:"
+            data-cy = "study"
             headerColor="primary"
             tabs={[
               {

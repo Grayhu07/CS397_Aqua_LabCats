@@ -6,7 +6,7 @@ describe ('Test App', () => {
 
   it ('test study table', () =>{
   	cy.visit('/');
-  	cy.get('[data-cy=study]').should('contain', 'taewookim2019@u.northwestern.edu');
+  	cy.get('[data-cy=study]').should('contain', 'start date/time');
   });
 
   it('select past studies', () => {
