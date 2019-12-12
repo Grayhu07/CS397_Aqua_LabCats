@@ -33,7 +33,6 @@ export default function CustomTabs(props) {
       <CardHeader color={headerColor} plain={plainTabs}>
         {title !== undefined ? <div className={cardTitle}>{title}</div> : null}
         <Tabs
-          data-cy="past"
           value={value}
           onChange={handleChange}
           classes={{
@@ -50,9 +49,9 @@ export default function CustomTabs(props) {
               icon = {
                 icon: <prop.tabIcon />
               };
-            }
+            };
             return (
-              <Tab
+              <Tab data-testid={prop.tabName}
                 classes={{
                   root: classes.tabRootButton,
                   selected: classes.tabSelected,
@@ -69,7 +68,7 @@ export default function CustomTabs(props) {
       <CardBody>
         {tabs.map((prop, key) => {
           if (key === value) {
-            return <div key={key}>{prop.tabContent}</div>;
+            return <div key={key} data-testid={`content${key}`}>{prop.tabContent}</div>;
           }
           return null;
         })}
